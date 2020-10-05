@@ -1,0 +1,11 @@
+.container-menu {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    &__img {
+        cursor: pointer;
+    }
+}
