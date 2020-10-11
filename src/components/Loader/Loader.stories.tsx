@@ -1,6 +1,5 @@
 import React from 'react';
 import Loader from './Loader';
-
 import { Meta } from '@storybook/react/types-6-0';
 
 export default {
