@@ -11,6 +11,8 @@ export default {
 
 const props: UserInfoProps = {
     totalBalance: 35000,
+    userPhotoUrl: 'https://cdn.mos.cms.futurecdn.net/VSy6kJDNq2pSXsCzb6cvYF.jpg',
+    userName: 'Vitalii',
 };
 
 export const UserInfoMain = (): React.ReactElement => <UserInfo {...props} />;
