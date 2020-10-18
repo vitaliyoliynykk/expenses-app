@@ -2,17 +2,19 @@ import React from 'react';
 import './About.scss';
 import BackToAuth from '../../assets/left-arrow.svg';
 import GitHubLogo from '../../assets/github-logo.svg';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const About = (): React.ReactElement => {
+    const history = useHistory();
+
+    const onClickBackToAuthPage = (): void => {
+        history.push('/auth');
+    };
+
     return (
         <div className="container-about">
-            <div className="container-about__img">
-                <Router>
-                    <Link to="/auth">
-                        <img src={BackToAuth} alt="comeback" />
-                    </Link>
-                </Router>
+            <div className="container-about__img" onClick={onClickBackToAuthPage}>
+                <img src={BackToAuth} alt="comeback" />
             </div>
             <div className="container-about__title">ABOUT</div>
             <div className="container-about__description">
