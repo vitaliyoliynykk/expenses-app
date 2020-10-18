@@ -14,7 +14,7 @@
     background: linear-gradient(-40deg, black, rgb(82, 82, 82), rgb(156, 156, 156), white);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite;
-    height: 100vh;
+    height: calc(100vh - 100px);
     padding: 50px;
     font-family: 'Public Sans', sans-serif;
     background-color: rgb(19, 19, 19);
@@ -22,20 +22,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    &__img {
+    &__header {
         width: 100%;
         display: flex;
-        justify-content: flex-start;
-        cursor: pointer;
-    }
-    &__title {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 28px;
-        color: white;
+        align-items: center;
+        justify-content: space-between;
+        &_img {
+            width: 40px;
+            cursor: pointer;
+        }
+        &_title {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            color: white;
+        }
     }
     &__description {
-        @extend .container-about__title;
+        @extend .container-about__header_title;
         width: 100%;
         max-width: 180px;
         font-size: 10px;

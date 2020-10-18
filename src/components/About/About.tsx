@@ -13,10 +13,16 @@ const About = (): React.ReactElement => {
 
     return (
         <div className="container-about">
-            <div className="container-about__img" onClick={onClickBackToAuthPage}>
-                <img src={BackToAuth} alt="comeback" />
+            <div className="container-about__header">
+                <img
+                    src={BackToAuth}
+                    alt="comeback"
+                    className="container-about__header_img"
+                    onClick={onClickBackToAuthPage}
+                />
+                <div className="container-about__header_title">ABOUT</div>
+                <div style={{ width: '40px' }}></div>
             </div>
-            <div className="container-about__title">ABOUT</div>
             <div className="container-about__description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo facere alias possimus odio, expedita
                 obcaecati delectus. Necessitatibus quos perspiciatis quasi dolores voluptate vero, asperiores molestias
