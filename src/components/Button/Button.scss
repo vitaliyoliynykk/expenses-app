@@ -1,0 +1,16 @@
+.container__btn {
+    text-align: center;
+    font-family: 'Public Sans', sans-serif;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    font-size: 15px;
+    width: 110px;
+    padding: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+    &:hover {
+        outline: none;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: linear 0.3s;
+    }
+}
