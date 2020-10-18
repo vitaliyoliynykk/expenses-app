@@ -22,13 +22,6 @@ const uiConfig = {
 class Auth extends React.Component<RouteComponentProps> {
     static contextType = AuthContext;
 
-    // componentDidUpdate(): void {
-    //     const currentUser = this.context;
-    //     if (currentUser) {
-    //         this.props.history.push('/');
-    //     }
-    // }
-
     private onClickAboutPage = (): void => {
         this.props.history.push('/about');
     };
