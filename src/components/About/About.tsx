@@ -9,7 +9,7 @@ const About = (): React.ReactElement => {
         <div className="container-about">
             <div className="container-about__img">
                 <Router>
-                    <Link to="/about">
+                    <Link to="/auth">
                         <img src={BackToAuth} alt="comeback" />
                     </Link>
                 </Router>
