@@ -1,6 +1,6 @@
 .container-auth {
-    height: 100vh;
-    padding: 50px;
+    height: calc(100vh - 100px);
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,19 +13,14 @@
         line-height: 28px;
         color: white;
     }
-    &__link {
-        font-family: 'Public Sans', sans-serif;
-        background-color: rgb(19, 19, 19);
+    &__about {
         color: white;
         font-size: 15px;
         width: 110px;
         padding: 15px;
         cursor: pointer;
-        border: none;
         text-align: center;
-        text-decoration: none;
         &:hover {
-            outline: none;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             transition: linear 0.3s;
         }
@@ -35,4 +30,25 @@
         width: 40px;
         background-color: white;
     }
+}
+
+.firebaseui-idp-button {
+    font-family: 'Public Sans', sans-serif !important;
+    color: white !important;
+    padding: 15px !important;
+    width: 144px !important;
+    text-align: center !important;
+    border: 2px solid white !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.firebaseui-idp-google>.firebaseui-idp-text {
+    color: white !important;
+    font-size: 15px !important;
+    padding-left: unset !important;
+}
+
+.firebaseui-idp-icon {
+    display: none !important;
 }
