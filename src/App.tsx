@@ -1,15 +1,14 @@
 import React from 'react';
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { AuthProvider } from './containers/Auth/AuthProvider';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducer from './reducers';
-
+import { composeWithDevTools } from 'redux-devtools-extension';
 import About from './components/About/About';
 import Auth from './containers/Auth/Auth';
+import { rootReducer } from './store/rootReducer';
 
-const store = createStore(reducer);
+const store = createStore(rootReducer, composeWithDevTools());
 
 function App(): React.ReactElement {
     return (
